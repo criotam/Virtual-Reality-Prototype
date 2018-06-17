@@ -163,6 +163,7 @@
      <Compile Include="Assets\Scripts\Introduction.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\OperationsButtons.cs" />
+     <Compile Include="Assets\Scripts\SceneLoadSettings.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />

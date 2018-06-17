@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-E:/Proj/Offset Lithiography Printing Process/GitRepo/Virtual-Reality-Prototype/prototype.apk
+E:/Proj/Offset Lithiography Printing Process/GitRepo/Virtual-Reality-Prototype/prototype_2.apk
 SceneListBegin?
 Assets/Scenes/Home.unity
 Assets/Scenes/Introduction.unity
@@ -203,3 +203,4 @@ f3957278b167828650bd9143e29d0543 Assembly-CSharp.dll:.Interactable
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GoogleVR.VideoDemo.AutoPlayVideo
 c8f7ca0bedee2f84f548ed9f1e700195 Assembly-CSharp.dll:.OperationsButtons
+895eecdceba8f15492b675e58696a9e7 Assembly-CSharp.dll:.SceneLoadSettings
