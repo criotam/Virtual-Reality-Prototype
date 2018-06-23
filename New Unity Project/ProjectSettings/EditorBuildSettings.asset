@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Introduction.unity
     guid: 1120b421ad760a4448bbc80abb43a246
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/printer.unity
+    guid: a3be8287968337541a27aaf472fd74e8
   m_configObjects: {}
