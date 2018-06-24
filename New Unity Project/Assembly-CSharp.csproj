@@ -161,10 +161,14 @@
      <Compile Include="Assets\Scripts\FrontOperation.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\Introduction.cs" />
+     <Compile Include="Assets\Scripts\IntroductionScene.cs" />
+     <Compile Include="Assets\Scripts\Level_1.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\OperationsButtons.cs" />
+     <Compile Include="Assets\Scripts\PrinterTutorial.cs" />
      <Compile Include="Assets\Scripts\SceneLoadSettings.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
+     <Compile Include="Assets\Scripts\updateText.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
      <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />

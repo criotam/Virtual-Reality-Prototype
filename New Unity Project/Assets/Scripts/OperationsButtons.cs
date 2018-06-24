@@ -27,56 +27,57 @@ public class OperationsButtons : MonoBehaviour {
         _frontOperation.SetButtonMaterial(primaryMaterial, this.gameObject);
     }
 
-//    public void OnPointerClick() {
-//       if (ButtonIsActive)
-//        {
-//            _frontOperation.SetButtonMaterial(primaryMaterial, this.gameObject);
-//            ButtonIsActive = false;
-//        }
-//        else {
-//            _frontOperation.SetButtonMaterial(SecondaryMaterial, this.gameObject);
- //           ButtonIsActive = true;
-//        }
-//    }
-
     public void RunIsClicked() {
-        if (!_frontOperation.IsRunActive())
+
+        if (!ButtonIsActive)
         {
-            _frontOperation.toggleRun();
+            _frontOperation.SetRunTrue();
+            Debug.Log("Operation Buttons: ButtonIsActive true");
             ButtonIsActive = true;
         }
-        else
-        {
-            ButtonIsActive = false;
+        else {
             _frontOperation.SetRunFalse();
+            ButtonIsActive = false;
+            Debug.Log("Operation Buttons: ButtonIsActive false");
         }
-
     }
 
-    public void PaperIsClicked() {
-        if (!_frontOperation.IsPaperActive() && _frontOperation.IsRunActive())
+    public void PaperIsClicked()
+    {
+
+        if (!ButtonIsActive)
         {
-            _frontOperation.togglePaper();
-            ButtonIsActive = true;
+            bool temp = _frontOperation.SetPaperTrue();
+            if (temp) {
+                Debug.Log("Operation Buttons: ButtonIsActive true");
+                ButtonIsActive = true;
+            }
         }
         else
         {
-            ButtonIsActive = false;
             _frontOperation.SetPaperFalse();
+            ButtonIsActive = false;
+            Debug.Log("Operation Buttons: ButtonIsActive false");
         }
     }
 
-    public void ImpressionIsClicked() {
-        if (_frontOperation.IsImressionActive() == false && _frontOperation.IsPaperActive())
+    public void ImpressionIsClicked()
+    {
+
+        if (!ButtonIsActive)
         {
-            _frontOperation.toggleImpression();
-            ButtonIsActive = true;
+            bool temp = _frontOperation.SetImpressionTrue();
+            if (temp) {
+                Debug.Log("Operation Buttons: ButtonIsActive true");
+                ButtonIsActive = true;
+            }
         }
         else
         {
-            ButtonIsActive = false;
             _frontOperation.SetImpressionFalse();
+            ButtonIsActive = false;
+            Debug.Log("Operation Buttons: ButtonIsActive false");
         }
     }
-
+    //public bool ButtonActivity() { return ButtonIsActive; }
 }

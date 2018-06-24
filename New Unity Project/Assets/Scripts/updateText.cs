@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class updateText : MonoBehaviour
@@ -18,5 +16,9 @@ public class updateText : MonoBehaviour
         textShow.text = textShow.text + toChangeValue;
 
         Debug.Log(textShow.text);
+    }
+
+    public void ResetValue() {
+        textShow.text = "";
     }
 }

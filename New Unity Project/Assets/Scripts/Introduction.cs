@@ -23,4 +23,8 @@ public class Introduction : MonoBehaviour {
         SceneManager.LoadScene(0);
         
     }
+
+    public void LoadPrinterTutorial() {
+        SceneManager.LoadScene(3);
+    }
 }
