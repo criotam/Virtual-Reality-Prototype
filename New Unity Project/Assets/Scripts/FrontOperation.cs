@@ -11,13 +11,14 @@ public class FrontOperation : MonoBehaviour {
     [SerializeField]
     GameObject[] PaperObject;
 
-    bool run, paper, impression;
+    //bool run, paper, impression;
     bool feeder_is_active = false;
+    public bool ButtonActivity { get; set; }
 
     void Start() {
-        run = false;
-        paper = false;
-        impression = false;
+        //run = false;
+        //paper = false;
+        //impression = false;
     }
 
     public void SetButtonMaterial(Material matt, GameObject _gameObject) {
@@ -37,72 +38,61 @@ public class FrontOperation : MonoBehaviour {
         for (int i = 0; i < PaperObject.Length; ++i) {
             PaperObject[i].GetComponent<Animator>().SetBool("feeder_is_active", feeder_is_active);
         }
-        PaperObject[1].GetComponent<Animator>().SetBool("feeder_is_active", false);
+        //PaperObject[1].GetComponent<Animator>().SetBool("feeder_is_active", false);
     }
 
-    public bool IsRunActive() { return run;  }
-    public bool IsPaperActive() { return paper; }
-    public bool IsImressionActive() { return impression; }
+    public bool IsRunActive() { return runButton.GetComponent<FrontOperation>().ButtonActivity;  }
+    public bool IsPaperActive() { return paperButton.GetComponent<FrontOperation>().ButtonActivity; }
+    public bool IsImressionActive() { return impressionButton.GetComponent<FrontOperation>().ButtonActivity; }
 
-    public void toggleRun() {
-        if (!run)
-        {
-            run = true;
-            runButton.GetComponent<Renderer>().material = runButton.GetComponent<OperationsButtons>().SecondaryMaterial;
-        }
-        else
-        {
-            SetRunFalse();
-            runButton.GetComponent<OperationsButtons>().SetButtonFalse();
-        }
+    public void SetRunTrue() {
+        Debug.Log("Front Operation: Set Run true");
+        runButton.GetComponent<FrontOperation>().ButtonActivity = true;
+        runButton.GetComponent<Renderer>().material = runButton.GetComponent<OperationsButtons>().SecondaryMaterial;
     }
-    public void togglePaper() {
-        if (run) {
-            if (!paper)
-            {
-                paper = true;
-                paperButton.GetComponent<Renderer>().material = paperButton.GetComponent<OperationsButtons>().SecondaryMaterial;
-            }
-            else
-            {
-                SetPaperFalse();
-                paperButton.GetComponent<OperationsButtons>().SetButtonFalse();
-            }
+
+    public bool SetPaperTrue() {
+        if (runButton.GetComponent<FrontOperation>().ButtonActivity)
+        {
+            Debug.Log("Front Operation: Set Paper true");
+            paperButton.GetComponent<FrontOperation>().ButtonActivity = true;
+            paperButton.GetComponent<Renderer>().material = paperButton.GetComponent<OperationsButtons>().SecondaryMaterial;
+            return true;
         }
+        return false;
     }
-    public void toggleImpression() {
-        if (paper == true) {
-            if (impression == false)
-            {
-                impression = true;
-                impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
-                ToggleFeederActivity();
-                runButton.GetComponent<OperationsButtons>().enabled = false;
-                paperButton.GetComponent<OperationsButtons>().enabled = false;
-                impressionButton.GetComponent<OperationsButtons>().enabled = false;
-                Debug.Log("eeder is active");
-            }
-            else
-            {
-                SetImpressionFalse();
-                impressionButton.GetComponent<OperationsButtons>().SetButtonFalse();
-            }
+
+    public bool SetImpressionTrue() {
+        if (paperButton.GetComponent<FrontOperation>().ButtonActivity)
+        { 
+            Debug.Log("Front Operation : Set Impression True");
+            impressionButton.GetComponent<FrontOperation>().ButtonActivity = true;
+            impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
+            ToggleFeederActivity();
+            GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<Level_1>().VerifyQuest();
+            return true;
         }
+        return false;
     }
 
     public void SetRunFalse() {
-        run = false;
+        Debug.Log("Front Operation : Set Run false");
+        runButton.GetComponent<FrontOperation>().ButtonActivity = false;
+        paperButton.GetComponent<FrontOperation>().SetPaperFalse();
         runButton.GetComponent<Renderer>().material = runButton.GetComponent<OperationsButtons>().primaryMaterial;
-        SetPaperFalse();
-        SetImpressionFalse();
+        //SetPaperFalse();
+        //SetImpressionFalse();
     }
     public void SetPaperFalse() {
-        paper = false;
+        Debug.Log("Front Operation : Set paper false");
+        paperButton.GetComponent<FrontOperation>().ButtonActivity = false;
+        impressionButton.GetComponent<FrontOperation>().SetImpressionFalse();
         paperButton.GetComponent<Renderer>().material = paperButton.GetComponent<OperationsButtons>().primaryMaterial;
-        SetImpressionFalse();
+        //SetImpressionFalse();
     }
     public void SetImpressionFalse() {
-        impression = false;
+        Debug.Log("Front Operation : Set Impression false");
+        impressionButton.GetComponent<FrontOperation>().ButtonActivity = false;
         impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().primaryMaterial;
     }
 }

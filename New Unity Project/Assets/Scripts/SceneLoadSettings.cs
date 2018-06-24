@@ -1,11 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SceneLoadSettings : MonoBehaviour {
 
     [SerializeField]
-    GameObject Player, Image;
+    GameObject Player,text,quitButton, Image;
 
     IEnumerator timeLapse() {
         yield return new WaitForSeconds(1);
@@ -15,6 +14,8 @@ public class SceneLoadSettings : MonoBehaviour {
 
     void Start() {
         Player.SetActive(true);
+        text.SetActive(false);
+        quitButton.SetActive(false);
         Image.GetComponent<Animator>().SetBool("LoadFade", true);
         StartCoroutine(timeLapse());
         
