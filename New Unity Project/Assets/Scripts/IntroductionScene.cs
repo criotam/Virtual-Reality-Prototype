@@ -8,7 +8,7 @@ public class IntroductionScene : MonoBehaviour {
     GameObject Player, Image;
 
     [SerializeField]
-    GameObject PlayerPoint, CanvasPoint = null, TutorialInterface;
+    GameObject PlayerPoint = null, CanvasPoint = null, TutorialInterface;
 
 
     IEnumerator timeLapse()
@@ -19,7 +19,7 @@ public class IntroductionScene : MonoBehaviour {
 
     void Start()
     {
-        if (CanvasPoint != null)
+        if (CanvasPoint != null && PlayerPoint != null)
         {
             TutorialInterface.transform.position = CanvasPoint.transform.position;
             TutorialInterface.transform.rotation = CanvasPoint.transform.rotation;

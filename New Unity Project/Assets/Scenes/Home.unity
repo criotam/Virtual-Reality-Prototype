@@ -2267,9 +2267,30 @@ Prefab:
       propertyPath: Image
       value: 
       objectReference: {fileID: 498119415}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1642760227 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1800612125087430, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1642760226}
+--- !u!114 &1642760228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642760227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2dd964b9ffc9d34d8e6cf201ea1ec7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1617824187}
+  text: {fileID: 0}
+  quitButton: {fileID: 0}
+  Image: {fileID: 498119415}
 --- !u!1 &1669509029
 GameObject:
   m_ObjectHideFlags: 0
