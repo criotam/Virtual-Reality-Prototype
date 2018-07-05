@@ -21,7 +21,6 @@ public class Introduction : MonoBehaviour {
 
     public void BackToHome() {
         SceneManager.LoadScene(0);
-        
     }
 
     public void LoadPrinterTutorial() {
