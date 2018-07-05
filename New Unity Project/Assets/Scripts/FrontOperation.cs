@@ -3,44 +3,22 @@
 public class FrontOperation : MonoBehaviour {
 
     [SerializeField]
-    GameObject[] FeederPipe;
-
-    [SerializeField]
     GameObject runButton, paperButton, impressionButton;
 
-    [SerializeField]
-    GameObject[] PaperObject;
-
-    //bool run, paper, impression;
     bool feeder_is_active = false;
     public bool ButtonActivity { get; set; }
 
-    void Start() {
-        //run = false;
-        //paper = false;
-        //impression = false;
+    public void SheetButtonClicked() {
+        GameObject _Level = GameObject.FindGameObjectWithTag("MonitorLevel");
+        _Level.GetComponent<SheetAnimationControl>().StartFeederAnimation();
+        _Level.GetComponent<SheetAnimationControl>().StartSheetAnimation();
     }
+ 
 
     public void SetButtonMaterial(Material matt, GameObject _gameObject) {
         _gameObject.GetComponent<Renderer>().material = matt;
     }
     
-    public void ToggleFeederActivity() {
-        if (feeder_is_active)
-            feeder_is_active = false;
-        else
-            feeder_is_active = true;
-
-        for (int i = 0; i < FeederPipe.Length; ++i)
-        {
-            FeederPipe[i].GetComponent<Animator>().SetBool("feeder_is_active", feeder_is_active);
-        }
-        for (int i = 0; i < PaperObject.Length; ++i) {
-            PaperObject[i].GetComponent<Animator>().SetBool("feeder_is_active", feeder_is_active);
-        }
-        //PaperObject[1].GetComponent<Animator>().SetBool("feeder_is_active", false);
-    }
-
     public bool IsRunActive() { return runButton.GetComponent<FrontOperation>().ButtonActivity;  }
     public bool IsPaperActive() { return paperButton.GetComponent<FrontOperation>().ButtonActivity; }
     public bool IsImressionActive() { return impressionButton.GetComponent<FrontOperation>().ButtonActivity; }
@@ -68,7 +46,7 @@ public class FrontOperation : MonoBehaviour {
             Debug.Log("Front Operation : Set Impression True");
             impressionButton.GetComponent<FrontOperation>().ButtonActivity = true;
             impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
-            ToggleFeederActivity();
+            GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<SheetAnimationControl>().ToggleFeederActivity();
             GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<Level_1>().VerifyQuest();
             return true;
         }

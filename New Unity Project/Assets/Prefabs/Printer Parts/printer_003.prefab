@@ -327,6 +327,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4740297432580218}
+  - component: {fileID: 95845902962426136}
   m_Layer: 0
   m_Name: feederUnit
   m_TagString: Untagged
@@ -910,7 +911,6 @@ GameObject:
   - component: {fileID: 4302755134104400}
   - component: {fileID: 33131810190963198}
   - component: {fileID: 23770124764451826}
-  - component: {fileID: 95671704441704104}
   m_Layer: 0
   m_Name: pipe004
   m_TagString: Untagged
@@ -1457,7 +1457,6 @@ GameObject:
   - component: {fileID: 4157014825494774}
   - component: {fileID: 33493875521098758}
   - component: {fileID: 23813648795328526}
-  - component: {fileID: 95113851061969958}
   m_Layer: 0
   m_Name: pipe001
   m_TagString: Untagged
@@ -2215,7 +2214,6 @@ GameObject:
   - component: {fileID: 4579064316116812}
   - component: {fileID: 33833482425437904}
   - component: {fileID: 23270039360045918}
-  - component: {fileID: 95153334290724852}
   m_Layer: 0
   m_Name: pipe003
   m_TagString: Untagged
@@ -2412,7 +2410,6 @@ GameObject:
   - component: {fileID: 4950353725325278}
   - component: {fileID: 33835469765733836}
   - component: {fileID: 23376593290628480}
-  - component: {fileID: 95654299790975008}
   m_Layer: 0
   m_Name: pipe002
   m_TagString: Untagged
@@ -3882,6 +3879,7 @@ GameObject:
   - component: {fileID: 23239466453949238}
   - component: {fileID: 65134741468757494}
   - component: {fileID: 114986032800149990}
+  - component: {fileID: 114745109416099608}
   m_Layer: 0
   m_Name: button_012
   m_TagString: Untagged
@@ -4055,13 +4053,13 @@ Transform:
   - {fileID: 4613788878119630}
   - {fileID: 4137307710558582}
   - {fileID: 4437780077123998}
+  - {fileID: 4960724872870512}
   - {fileID: 4572772699939390}
   - {fileID: 4469404258918690}
   - {fileID: 4044141483311852}
   - {fileID: 4085820968554422}
-  - {fileID: 4533210293791712}
-  - {fileID: 4960724872870512}
   - {fileID: 4701900114144842}
+  - {fileID: 4533210293791712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4101,7 +4099,7 @@ Transform:
   - {fileID: 4876431578749964}
   - {fileID: 4679811155206904}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4051716130301296
 Transform:
@@ -4225,7 +4223,7 @@ Transform:
   - {fileID: 4141261517597688}
   - {fileID: 4598425760956674}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4091944549976070
 Transform:
@@ -4526,7 +4524,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709094653120048}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.22498743, z: -0.37874782}
+  m_LocalPosition: {x: 0.03, y: 0.22498743, z: -0.37874782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4080623401282374}
@@ -4752,7 +4750,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1215968948700018}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16011368, y: 0.13221897, z: 0.36724633}
+  m_LocalPosition: {x: -0.1601137, y: 0.21500078, z: 0.367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4740297432580218}
@@ -5127,7 +5125,7 @@ Transform:
   - {fileID: 4497120413232526}
   - {fileID: 4746180973243990}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4469566273703108
 Transform:
@@ -5379,7 +5377,7 @@ Transform:
   - {fileID: 4740297432580218}
   - {fileID: 4374168583062444}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4545390177207594
 Transform:
@@ -5469,7 +5467,7 @@ Transform:
   - {fileID: 4593343283966104}
   - {fileID: 4037389323500338}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4577790025631226
 Transform:
@@ -5491,7 +5489,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1571572613977030}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25534043, y: 0.13221897, z: 0.36724633}
+  m_LocalPosition: {x: 0.2553404, y: 0.215, z: 0.367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4740297432580218}
@@ -5744,7 +5742,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1486521258313522}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.654, z: 0.722}
+  m_LocalPosition: {x: 0, y: 0.717, z: 0.722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4634855096904878}
@@ -5913,7 +5911,7 @@ Transform:
   - {fileID: 4012414819007972}
   - {fileID: 4694586569924482}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4716726003493678
 Transform:
@@ -6383,7 +6381,7 @@ Transform:
   - {fileID: 4549387368235610}
   - {fileID: 4329087070886574}
   m_Father: {fileID: 4036627195390346}
-  m_RootOrder: 11
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4963518119981930
 Transform:
@@ -13486,8 +13484,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1.5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.2, y: 1, z: 1.5}
+  m_Center: {x: -0.03, y: 0, z: 0.09}
 --- !u!65 &65955433387089082
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -13498,8 +13496,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6, y: 14, z: 1}
-  m_Center: {x: 0.12, y: 1.91, z: 0}
+  m_Size: {x: 6.5, y: 14.5, z: 1}
+  m_Center: {x: -0.04, y: 1.7, z: 0}
 --- !u!65 &65978905552008028
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -13512,70 +13510,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95113851061969958
+--- !u!95 &95845902962426136
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1355940949394952}
+  m_GameObject: {fileID: 1069223398736196}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46bf9eb23840f7a4694a1eed9c02f3a8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &95153334290724852
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1571572613977030}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d02bc9c930211cf45b5fa0f2b6c59669, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &95654299790975008
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1648027645586018}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab57acad017286645b1df79d0685c74c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &95671704441704104
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1215968948700018}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1db2a6b8ed3962a4894479783233760b, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9728f8ee6459f54b8bcb49a9d545c13, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13600,7 +13544,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114969403120884444}
+        - m_Target: {fileID: 114451041710362574}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -13617,7 +13561,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114969403120884444}
+        - m_Target: {fileID: 114451041710362574}
           m_MethodName: OnPointerExit
           m_Mode: 1
           m_Arguments:
@@ -13634,8 +13578,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114969403120884444}
-          m_MethodName: OnPointerClick
+        - m_Target: {fileID: 114451041710362574}
+          m_MethodName: RunIsClicked
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13803,7 +13747,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114322007281055804}
+        - m_Target: {fileID: 114369031494895152}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -13820,25 +13764,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114322007281055804}
+        - m_Target: {fileID: 114369031494895152}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114322007281055804}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14072,7 +13999,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114835810124724232}
+        - m_Target: {fileID: 114615799169442640}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -14089,25 +14016,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114835810124724232}
+        - m_Target: {fileID: 114615799169442640}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114835810124724232}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14196,11 +14106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114157220568090740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14253,11 +14161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114175707019911988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14375,7 +14281,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114157207654710684}
+        - m_Target: {fileID: 114829977934268710}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -14392,25 +14298,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114157207654710684}
+        - m_Target: {fileID: 114829977934268710}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114157207654710684}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14706,11 +14595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114236375752033378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14782,11 +14669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114294476306983668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14951,7 +14836,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114165125507628346}
+        - m_Target: {fileID: 114301391903216358}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -14968,25 +14853,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114165125507628346}
+        - m_Target: {fileID: 114301391903216358}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114165125507628346}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15056,11 +14924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114359331755683422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15156,7 +15022,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114500436041778286}
+        - m_Target: {fileID: 114809315838497456}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -15173,25 +15039,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114500436041778286}
+        - m_Target: {fileID: 114809315838497456}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114500436041778286}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15282,7 +15131,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114455415390638540}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ResetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114378935987079154
@@ -15361,7 +15221,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114261248438113164}
+        - m_Target: {fileID: 114632698794838798}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -15378,7 +15238,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114261248438113164}
+        - m_Target: {fileID: 114632698794838798}
           m_MethodName: OnPointerExit
           m_Mode: 1
           m_Arguments:
@@ -15395,8 +15255,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114261248438113164}
-          m_MethodName: OnPointerClick
+        - m_Target: {fileID: 114632698794838798}
+          m_MethodName: ImpressionIsClicked
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15568,11 +15428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114500436041778286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15584,11 +15442,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114506037627334884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15811,7 +15667,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114950307894559758}
+        - m_Target: {fileID: 114807429499717186}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -15828,25 +15684,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114950307894559758}
+        - m_Target: {fileID: 114807429499717186}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114950307894559758}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15903,18 +15742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe:
-  - {fileID: 1355940949394952}
-  - {fileID: 1648027645586018}
-  - {fileID: 1571572613977030}
-  - {fileID: 1215968948700018}
   runButton: {fileID: 1756120738011632}
   paperButton: {fileID: 1333585066319256}
   impressionButton: {fileID: 1893083331236618}
-  PaperObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &114599127179376746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15983,7 +15813,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114646928443542238}
+        - m_Target: {fileID: 114615518562357738}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -16000,25 +15830,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114646928443542238}
+        - m_Target: {fileID: 114615518562357738}
           m_MethodName: OnPointerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114646928443542238}
-          m_MethodName: OnPointerClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -16166,11 +15979,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114632698794838798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16222,11 +16033,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114674804700478828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16485,6 +16294,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114745109416099608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975333752544400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d78bcff057e9a0418fa29fa03b3f232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryMaterial: {fileID: 2100000, guid: 16a72df9b76d1194c84b90d3db5f6aeb, type: 2}
+  SecondaryMaterial: {fileID: 2100000, guid: dcc5fceb1486e3d4a854952891a56c92, type: 2}
 --- !u!114 &114778231916915206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16777,11 +16599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114883068064596850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16825,7 +16645,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114629138869053854}
+        - m_Target: {fileID: 114319998032918634}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -16842,7 +16662,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114629138869053854}
+        - m_Target: {fileID: 114319998032918634}
           m_MethodName: OnPointerExit
           m_Mode: 1
           m_Arguments:
@@ -16905,7 +16725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.04
+  m_Text: 0
 --- !u!114 &114929000996347644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16955,7 +16775,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114228163819117068}
+        - m_Target: {fileID: 114151031387752070}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -16972,7 +16792,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114228163819117068}
+        - m_Target: {fileID: 114151031387752070}
           m_MethodName: OnPointerExit
           m_Mode: 1
           m_Arguments:
@@ -16990,7 +16810,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114228163819117068}
-          m_MethodName: OnPointerClick
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -17019,7 +16839,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114480901195804664}
+        - m_Target: {fileID: 114628897296178356}
           m_MethodName: OnPointerEnter
           m_Mode: 1
           m_Arguments:
@@ -17036,7 +16856,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114480901195804664}
+        - m_Target: {fileID: 114628897296178356}
           m_MethodName: OnPointerExit
           m_Mode: 1
           m_Arguments:
@@ -17053,8 +16873,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114480901195804664}
-          m_MethodName: OnPointerClick
+        - m_Target: {fileID: 114628897296178356}
+          m_MethodName: PaperIsClicked
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -17130,11 +16950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114969403120884444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17146,11 +16964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9dbe5629e6fbfa4686ac8c3800901ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeederPipe: []
-  runButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  impressionButton: {fileID: 0}
-  PaperObject: []
+  runButton: {fileID: 1756120738011632}
+  paperButton: {fileID: 1333585066319256}
+  impressionButton: {fileID: 1893083331236618}
 --- !u!114 &114986032800149990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17162,7 +16978,41 @@ MonoBehaviour:
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114745109416099608}
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114745109416099608}
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!136 &136242207715047280
 CapsuleCollider:
@@ -18378,7 +18228,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044643918822958}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_Children:
   - {fileID: 224087494671736482}
@@ -18391,7 +18241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.002, y: 0.291}
+  m_AnchoredPosition: {x: 0.027999971, y: 0.291}
   m_SizeDelta: {x: 770, y: 770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224929062410816126
