@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneLoadSettings : MonoBehaviour {
 
@@ -9,11 +10,14 @@ public class SceneLoadSettings : MonoBehaviour {
     IEnumerator timeLapse() {
         yield return new WaitForSeconds(1);
         Image.SetActive(false);
+        //if (S)
+        Player.GetComponent<Player>().SetCompanion();
+        GameObject.FindGameObjectWithTag("Companion").SetActive(false);
 
     }
 
     void Start() {
-        Debug.Log("WOrking Fine here");
+        //Debug.Log("WOrking Fine here");
         Player.SetActive(true);
         if (text != null && quitButton != null) {
             text.SetActive(false);
@@ -21,5 +25,6 @@ public class SceneLoadSettings : MonoBehaviour {
         }
         Image.GetComponent<Animator>().SetBool("LoadFade", true);
         StartCoroutine(timeLapse());
+        
     }
 }
