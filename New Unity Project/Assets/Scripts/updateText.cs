@@ -1,24 +1,21 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class updateText : MonoBehaviour
 {
+    private MonitorControl monitorControl;
 
-    //Text Field to target
-    public Text textShow = null;
-
-	private void Start()
-	{
-        Debug.Log(textShow.text);
-	}
+    void Start()
+    {
+        monitorControl = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<MonitorControl>();
+    }
+    
 	public void changeText(string toChangeValue)
     {
-        textShow.text = textShow.text + toChangeValue;
-
-        Debug.Log(textShow.text);
+        monitorControl.UpdateCurrentBuffer(toChangeValue);
     }
 
-    public void ResetValue() {
-        textShow.text = "";
+    public void DeleteButtonClick()
+    {
+        monitorControl.DeleteLastInput();
     }
 }

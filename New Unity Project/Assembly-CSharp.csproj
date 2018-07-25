@@ -170,12 +170,15 @@
      <Compile Include="Assets\Scripts\Level_2.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MetalSheet.cs" />
+     <Compile Include="Assets\Scripts\MonitorControl.cs" />
      <Compile Include="Assets\Scripts\OperationsButtons.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PrinterTutorial.cs" />
      <Compile Include="Assets\Scripts\SceneLoadSettings.cs" />
      <Compile Include="Assets\Scripts\SheetAnimationControl.cs" />
+     <Compile Include="Assets\Scripts\SheetCounter.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
+     <Compile Include="Assets\Scripts\tempmMetalPlate.cs" />
      <Compile Include="Assets\Scripts\updateText.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />

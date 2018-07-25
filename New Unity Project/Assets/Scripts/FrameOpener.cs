@@ -21,11 +21,11 @@ public class FrameOpener : MonoBehaviour {
     }
 
     public void OnPointerEnter() {
-       GetComponent<Renderer>().material = PrimaryMaterial;
+       GetComponent<Renderer>().material = SecondaryMaterial;
        
     }
     public void OnPointerExit() {
-        GetComponent<Renderer>().material = SecondaryMaterial;
+        GetComponent<Renderer>().material = PrimaryMaterial;
     }
     
 	

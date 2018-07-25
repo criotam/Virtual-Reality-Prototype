@@ -47,7 +47,7 @@ public class FrontOperation : MonoBehaviour {
             impressionButton.GetComponent<FrontOperation>().ButtonActivity = true;
             impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
             GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<SheetAnimationControl>().ToggleFeederActivity();
-            GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<Level_1>().VerifyQuest();
+            //GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<Level_1>().VerifyQuest();
             return true;
         }
         return false;

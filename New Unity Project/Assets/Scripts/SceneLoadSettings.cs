@@ -10,10 +10,12 @@ public class SceneLoadSettings : MonoBehaviour {
     IEnumerator timeLapse() {
         yield return new WaitForSeconds(1);
         Image.SetActive(false);
-        //if (S)
-        Player.GetComponent<Player>().SetCompanion();
-        GameObject.FindGameObjectWithTag("Companion").SetActive(false);
-
+        
+        if (Player.GetComponent<Player>() != null)
+        {
+            Player.GetComponent<Player>().SetCompanion();
+            GameObject.FindGameObjectWithTag("Companion").SetActive(false);
+        }
     }
 
     void Start() {

@@ -39,7 +39,7 @@ public class MetalSheet : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Companion").GetComponentInChildren<Text>().text = "One Sheet at a time";
             StartCoroutine(ChangeCompanionText());
         }
-        //Debug.Log(sheet_in_hand);
+        
     }
     IEnumerator ChangeCompanionText() {
         yield return new WaitForSeconds(2);
@@ -55,6 +55,7 @@ public class MetalSheet : MonoBehaviour {
     public void ShowCompanion(GameObject _buffer)
     {
         CurrentBufer = _buffer;
+        // THis canvas which is been activated is Companion
         Canvas.SetActive(true);
     }
 }
