@@ -5,7 +5,22 @@ public class Level_1 : MonoBehaviour {
 
     public Text SheetThickness;
     public GameObject Status;
-    public GameObject quitButton; 
+    public GameObject quitButton;
+    public GameObject ImpressionButton;
+    bool QuestVerified = false;
+
+    void Update() {
+        if (ImpressionButton == null)
+        {
+            Debug.Log("Impression Button is not Assigned Any Value");
+            return;
+        }
+        if (ImpressionButton.GetComponent<FrontOperation>().IsImressionActive() && !QuestVerified)
+        {
+            QuestVerified = true;
+            VerifyQuest();
+        }
+    }
 
 
     public void VerifyQuest() {

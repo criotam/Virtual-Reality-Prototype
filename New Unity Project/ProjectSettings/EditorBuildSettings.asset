@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrinterTutorial.unity
     guid: 1905fda9b3648604a9f2d910cbc279d2
+  - enabled: 1
+    path: Assets/Scenes/printer 1.unity
+    guid: 034c31819232bc849a11b931cba89a7a
   m_configObjects: {}
