@@ -3,7 +3,7 @@
 public class SheetAnimationControl : MonoBehaviour {
 
     public GameObject[] sheets;
-    public float animationSpeed = 1;
+    public float animationSpeed = 4;
     public GameObject FeederUnit;
     public Texture2D PrintImage;
 
@@ -43,17 +43,17 @@ public class SheetAnimationControl : MonoBehaviour {
     {
         if (feeder_is_active)
         {
+            Debug.Log("Stoping Feeder Animation");
             StopFeederAnimation();
             StopSheetAnimation();
             feeder_is_active = false;
         }
         else
         {
+            Debug.Log("Starting Feeder Animation");
             StartFeederAnimation();
             StartSheetAnimation();
             feeder_is_active = true;
         }
     }
-
-
 }

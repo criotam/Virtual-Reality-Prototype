@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/printer 1.unity
     guid: 034c31819232bc849a11b931cba89a7a
+  - enabled: 1
+    path: Assets/Scenes/printer 2.unity
+    guid: 1ed8e52cf6606774ca3272a42263adbf
   m_configObjects: {}

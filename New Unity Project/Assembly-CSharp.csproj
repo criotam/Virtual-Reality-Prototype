@@ -158,7 +158,6 @@
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Blanket.cs" />
      <Compile Include="Assets\Scripts\CloseUI.cs" />
-     <Compile Include="Assets\Scripts\Companion.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\eventCamera.cs" />
      <Compile Include="Assets\Scripts\FrameOpener.cs" />
@@ -168,6 +167,8 @@
      <Compile Include="Assets\Scripts\IntroductionScene.cs" />
      <Compile Include="Assets\Scripts\Level_1.cs" />
      <Compile Include="Assets\Scripts\Level_2.cs" />
+     <Compile Include="Assets\Scripts\Level_3.cs" />
+     <Compile Include="Assets\Scripts\LevelObjective.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MetalSheet.cs" />
      <Compile Include="Assets\Scripts\MonitorControl.cs" />
@@ -179,6 +180,7 @@
      <Compile Include="Assets\Scripts\SheetCounter.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\tempmMetalPlate.cs" />
+     <Compile Include="Assets\Scripts\UniqueLevel.cs" />
      <Compile Include="Assets\Scripts\updateText.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />

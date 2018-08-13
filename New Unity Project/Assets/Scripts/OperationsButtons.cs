@@ -5,9 +5,10 @@ public class OperationsButtons : MonoBehaviour {
     public Material primaryMaterial, SecondaryMaterial;
 
     FrontOperation _frontOperation;
-    private bool ButtonIsActive = false;
+    public bool ButtonIsActive { get; set; }
     
     void Start() {
+        ButtonIsActive = false;
         _frontOperation = GetComponentInParent<FrontOperation>();
     }
 
@@ -28,6 +29,11 @@ public class OperationsButtons : MonoBehaviour {
     }
 
     public void RunIsClicked() {
+
+        MonitorControl mc = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<MonitorControl>();
+        bool value = mc.VerifyValues();
+        if (value == false)
+            return;
 
         if (!ButtonIsActive)
         {
@@ -79,5 +85,4 @@ public class OperationsButtons : MonoBehaviour {
             Debug.Log("Operation Buttons: ButtonIsActive false");
         }
     }
-    //public bool ButtonActivity() { return ButtonIsActive; }
 }
