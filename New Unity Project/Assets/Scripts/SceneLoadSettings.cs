@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneLoadSettings : MonoBehaviour {
 
@@ -13,8 +12,7 @@ public class SceneLoadSettings : MonoBehaviour {
         
         if (Player.GetComponent<Player>() != null)
         {
-            Player.GetComponent<Player>().SetCompanion();
-            GameObject.FindGameObjectWithTag("Companion").SetActive(false);
+            //Player.GetComponent<Player>().SetCompanion();
         }
     }
 
@@ -27,6 +25,5 @@ public class SceneLoadSettings : MonoBehaviour {
         }
         Image.GetComponent<Animator>().SetBool("LoadFade", true);
         StartCoroutine(timeLapse());
-        
     }
 }

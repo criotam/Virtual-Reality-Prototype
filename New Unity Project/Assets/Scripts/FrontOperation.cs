@@ -25,16 +25,16 @@ public class FrontOperation : MonoBehaviour {
 
     public void SetRunTrue() {
         Debug.Log("Front Operation: Set Run true");
-        runButton.GetComponent<FrontOperation>().ButtonActivity = true;
-        runButton.GetComponent<Renderer>().material = runButton.GetComponent<OperationsButtons>().SecondaryMaterial;
+        GetComponent<FrontOperation>().ButtonActivity = true;
+        GetComponent<Renderer>().material = runButton.GetComponent<OperationsButtons>().SecondaryMaterial;
     }
 
     public bool SetPaperTrue() {
         if (runButton.GetComponent<FrontOperation>().ButtonActivity)
         {
             Debug.Log("Front Operation: Set Paper true");
-            paperButton.GetComponent<FrontOperation>().ButtonActivity = true;
-            paperButton.GetComponent<Renderer>().material = paperButton.GetComponent<OperationsButtons>().SecondaryMaterial;
+            GetComponent<FrontOperation>().ButtonActivity = true;
+            GetComponent<Renderer>().material = paperButton.GetComponent<OperationsButtons>().SecondaryMaterial;
             return true;
         }
         return false;
@@ -44,10 +44,9 @@ public class FrontOperation : MonoBehaviour {
         if (paperButton.GetComponent<FrontOperation>().ButtonActivity)
         { 
             Debug.Log("Front Operation : Set Impression True");
-            impressionButton.GetComponent<FrontOperation>().ButtonActivity = true;
-            impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
+            GetComponent<FrontOperation>().ButtonActivity = true;
+            GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().SecondaryMaterial;
             GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<SheetAnimationControl>().ToggleFeederActivity();
-            //GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<Level_1>().VerifyQuest();
             return true;
         }
         return false;
@@ -72,5 +71,7 @@ public class FrontOperation : MonoBehaviour {
         Debug.Log("Front Operation : Set Impression false");
         impressionButton.GetComponent<FrontOperation>().ButtonActivity = false;
         impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().primaryMaterial;
+        GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<SheetAnimationControl>().ToggleFeederActivity();
+        GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<AudioController>().StartMachineAudio();
     }
 }

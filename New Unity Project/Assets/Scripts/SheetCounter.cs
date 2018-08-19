@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 public class SheetCounter : MonoBehaviour {
 
@@ -20,7 +18,7 @@ public class SheetCounter : MonoBehaviour {
 
     public void OnTriggerExit(Collider col)
     {
-        Debug.Log("Collision");
+        //Debug.Log("Collision");
         count = count + 1;
         SheetCountScreen.GetComponent<Text>().text = count.ToString();
     }

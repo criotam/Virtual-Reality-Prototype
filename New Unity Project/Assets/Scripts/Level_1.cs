@@ -9,6 +9,12 @@ public class Level_1 : MonoBehaviour {
     public GameObject ImpressionButton;
     bool QuestVerified = false;
 
+
+    void Start()
+    {
+        GetComponent<BlanketControl>().SetBlanketSheetTrue();
+    }
+
     void Update() {
         if (ImpressionButton == null)
         {

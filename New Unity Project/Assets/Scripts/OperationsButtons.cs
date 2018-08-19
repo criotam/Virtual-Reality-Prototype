@@ -5,9 +5,10 @@ public class OperationsButtons : MonoBehaviour {
     public Material primaryMaterial, SecondaryMaterial;
 
     FrontOperation _frontOperation;
-    private bool ButtonIsActive = false;
+    public bool ButtonIsActive { get; set; }
     
     void Start() {
+        ButtonIsActive = false;
         _frontOperation = GetComponentInParent<FrontOperation>();
     }
 
@@ -28,6 +29,26 @@ public class OperationsButtons : MonoBehaviour {
     }
 
     public void RunIsClicked() {
+
+        if (GameObject.FindGameObjectWithTag("MonitorLevel") == null)
+        {
+            Debug.Log("No MonitorLevel in scene!");
+            return;
+        }
+
+        MonitorControl mc = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<MonitorControl>();
+        bool value = mc.VerifyValues();
+        if (value == false)
+            return;
+
+        BlanketControl bc = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<BlanketControl>();
+        value = bc.AllBlanketHasSheet();
+        if (value == false)
+        {
+            Debug.Log("Blanket Does not have any sheets");
+            return;
+        }
+            
 
         if (!ButtonIsActive)
         {
@@ -70,6 +91,7 @@ public class OperationsButtons : MonoBehaviour {
             if (temp) {
                 Debug.Log("Operation Buttons: ButtonIsActive true");
                 ButtonIsActive = true;
+                GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<AudioController>().StartMachineAudio();
             }
         }
         else
@@ -77,7 +99,7 @@ public class OperationsButtons : MonoBehaviour {
             _frontOperation.SetImpressionFalse();
             ButtonIsActive = false;
             Debug.Log("Operation Buttons: ButtonIsActive false");
+            GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<AudioController>().StopMachineAudio();
         }
     }
-    //public bool ButtonActivity() { return ButtonIsActive; }
 }
