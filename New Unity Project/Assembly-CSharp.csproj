@@ -156,7 +156,9 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\AudioController.cs" />
      <Compile Include="Assets\Scripts\Blanket.cs" />
+     <Compile Include="Assets\Scripts\BlanketControl.cs" />
      <Compile Include="Assets\Scripts\CloseUI.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\eventCamera.cs" />
@@ -175,6 +177,7 @@
      <Compile Include="Assets\Scripts\OperationsButtons.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PrinterTutorial.cs" />
+     <Compile Include="Assets\Scripts\QuestCompleteButton.cs" />
      <Compile Include="Assets\Scripts\SceneLoadSettings.cs" />
      <Compile Include="Assets\Scripts\SheetAnimationControl.cs" />
      <Compile Include="Assets\Scripts\SheetCounter.cs" />

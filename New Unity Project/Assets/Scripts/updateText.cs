@@ -4,14 +4,15 @@ using UnityEngine.UI;
 
 public class updateText : MonoBehaviour
 {
-    private MonitorControl monitorControl;
+    private MonitorControl monitorControl = null;
 
     static Text CurrentBuffer;
     static string temp;
 
     void Start()
     {
-        monitorControl = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<MonitorControl>();
+        if (GameObject.FindGameObjectWithTag("MonitorLevel")!= null)
+            monitorControl = GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<MonitorControl>();
     }
     
 	public void changeText(string toChangeValue)
@@ -34,6 +35,7 @@ public class updateText : MonoBehaviour
     {
         if (CurrentBuffer == this.gameObject.GetComponentInChildren<Text>())
             return;
+
         CurrentBuffer = this.gameObject.GetComponentInChildren<Text>();
         temp = CurrentBuffer.text;
         CurrentBuffer.text = "";
@@ -78,8 +80,15 @@ public class updateText : MonoBehaviour
 
     public void ClearBuffer()
     {
-        Text errorLog = GameObject.FindGameObjectWithTag("TVErrorLog").GetComponent<Text>();
+        if (monitorControl == null)
+        {
+            Debug.Log("No MonitorLevel in Scene!");
+            return;
+        }
+            
         bool values = monitorControl.VerifyValues();
+        Text errorLog = GameObject.FindGameObjectWithTag("TVErrorLog").GetComponent<Text>();
+        
         if (values)
         {
             errorLog.text = "Saved Successfully!!!";

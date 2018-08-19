@@ -72,5 +72,6 @@ public class FrontOperation : MonoBehaviour {
         impressionButton.GetComponent<FrontOperation>().ButtonActivity = false;
         impressionButton.GetComponent<Renderer>().material = impressionButton.GetComponent<OperationsButtons>().primaryMaterial;
         GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<SheetAnimationControl>().ToggleFeederActivity();
+        GameObject.FindGameObjectWithTag("MonitorLevel").GetComponent<AudioController>().StartMachineAudio();
     }
 }

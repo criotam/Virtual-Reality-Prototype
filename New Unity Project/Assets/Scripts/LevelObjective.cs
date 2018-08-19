@@ -5,7 +5,6 @@ public class LevelObjective : MonoBehaviour {
     public GameObject Status, quitButton;
     public GameObject NumberOfSheets, SheetThickness, IntroductionDeskText;
     public GameObject Run;
-    public GameObject[] blanket;
     bool completed = true;
     bool visitedOnce = false;
 
@@ -15,10 +14,7 @@ public class LevelObjective : MonoBehaviour {
 
         if (UniqueLevel.BlanketHasMetalSheet)
         {
-            for(int i = 0; i < blanket.Length; ++i)
-            {
-                blanket[i].GetComponent<Blanket>().blanket_has_sheet = true;
-            }
+            GetComponent<BlanketControl>().SetBlanketSheetTrue();
         }
     }
 
@@ -34,19 +30,8 @@ public class LevelObjective : MonoBehaviour {
             completed = false;
         }
 
-        int i = 0;
-        for (int j = 0; j < blanket.Length; ++j)
-        {
-            if (blanket[j].GetComponent<Blanket>().blanket_has_sheet)
-            {
-                i++;
-            }
-        }
-
-        if (i < 5)
-        {
+        if (!GetComponent<BlanketControl>().AllBlanketHasSheet())
             completed = false;
-        }
 
         if (completed && !visitedOnce)
         {

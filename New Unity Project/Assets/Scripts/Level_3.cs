@@ -6,7 +6,7 @@ public class Level_3 : MonoBehaviour {
     {
         UniqueLevel.NumberOfSheets = 250;
         UniqueLevel.sheetThckness = 0.05f;
-        UniqueLevel.BlanketHasMetalSheet = true;
+        UniqueLevel.BlanketHasMetalSheet = false;
         UniqueLevel.MetalSHeetChangeRequired = false;
         UniqueLevel.hasInk = true;
         UniqueLevel.Objective = "Print 250 sheets of size 0.05mm. Add metal sheets in printer. " +

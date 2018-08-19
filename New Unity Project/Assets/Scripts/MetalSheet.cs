@@ -1,19 +1,16 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
 
 public class MetalSheet : MonoBehaviour {
 
-    public static bool sheet_in_hand { get; set; }
+    public static bool sheet_in_hand = false;
     public bool place_metal_sheet { get; set;  }
-
+    
     private GameObject cnv;
 
     public static GameObject CurrentBufer { get; set; }
     
     void Start()
     {
-        sheet_in_hand = false;
         place_metal_sheet = false;
         if (GetComponentInChildren<Canvas>())
         {
@@ -32,8 +29,11 @@ public class MetalSheet : MonoBehaviour {
 
     public void TakeMetalSheet() {
 
-        if (sheet_in_hand == true)
+        if (sheet_in_hand)
+        {
+            Debug.Log("You already have sheet in hand!");
             return;
+        }
         
         sheet_in_hand = true;
         Animator _anm;
