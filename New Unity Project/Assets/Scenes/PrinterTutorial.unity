@@ -752,6 +752,7 @@ MonoBehaviour:
   Cvas: {fileID: 494850156}
   CanvasPoint: {fileID: 829772908}
   PlayerPoint: {fileID: 2106566804}
+  IntroductionAudio: {fileID: 8300000, guid: 7c8cdd781420c37488818dbecd673af2, type: 3}
 --- !u!114 &744727333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,78 +912,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807205632}
---- !u!1001 &819297973
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1303918346}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: Image
-      value: 
-      objectReference: {fileID: 1929243995}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: SpawnPoint
-      value: 
-      objectReference: {fileID: 1656694878}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: TutorialInterface
-      value: 
-      objectReference: {fileID: 494850156}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: PlayerPoint
-      value: 
-      objectReference: {fileID: 215945031}
-    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
-        type: 2}
-      propertyPath: CanvasPoint
-      value: 
-      objectReference: {fileID: 1656694878}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &829772908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1089,7 @@ Prefab:
     - target: {fileID: 224332395846694308, guid: 3b4d2c9cd17983e46ab70d2f668fc697,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0006533919
+      value: -0.0006128991
       objectReference: {fileID: 0}
     - target: {fileID: 224861745259984698, guid: 3b4d2c9cd17983e46ab70d2f668fc697,
         type: 2}
@@ -1529,8 +1458,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: The delivery unit is where the printed sheets comes out. You can also verify
-    for color intensity of the print here. The moniter is where from all the adjustments
-    are done such as sheet size, color intesity, etx
+    for color intensity of the print here. The monitor is where from all the adjustments
+    are done such as sheet size, color intensity, etc
 --- !u!222 &1116462367
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1579,6 +1508,122 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d638298e697ca4e9b91853efadd0e6da, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1240855337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1800612125087430, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1240855341}
+  - component: {fileID: 1240855340}
+  - component: {fileID: 1240855339}
+  - component: {fileID: 1240855338}
+  m_Layer: 0
+  m_Name: SceneLoadSetting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1240855338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240855337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b20773c392c5e4dad5d6d34255cd21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips: []
+  buttonClickSound: {fileID: 8300000, guid: 461c88666275e904f959f13d43f5d559, type: 3}
+--- !u!114 &1240855339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240855337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0157c63fb794df89c6735fc602eca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPointerClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1240855338}
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnScroll:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1240855340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240855337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac70d6686559dc149a523fd56a96d895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1303918346}
+  Image: {fileID: 1929243995}
+  PlayerPoint: {fileID: 215945031}
+  CanvasPoint: {fileID: 1656694878}
+  TutorialInterface: {fileID: 494850156}
+  WelcomeAudio: {fileID: 744727330}
+--- !u!4 &1240855341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4985451787916558, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240855337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1250846047
 Prefab:
   m_ObjectHideFlags: 0
@@ -1735,6 +1780,7 @@ MonoBehaviour:
   Cvas: {fileID: 0}
   CanvasPoint: {fileID: 0}
   PlayerPoint: {fileID: 0}
+  IntroductionAudio: {fileID: 8300000, guid: bc6f2652f44dc7846bd13ee44588dd8f, type: 3}
 --- !u!114 &1364516972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,12 +1993,10 @@ MonoBehaviour:
   - {fileID: 114966567}
   NextTab:
   - {fileID: 1833185561}
-  - {fileID: 1833185561}
-  - {fileID: 1833185561}
-  - {fileID: 1833185561}
   Cvas: {fileID: 494850156}
   CanvasPoint: {fileID: 1031553406}
   PlayerPoint: {fileID: 320305836}
+  IntroductionAudio: {fileID: 8300000, guid: 14430fe95b27d64409c483eb4436ced9, type: 3}
 --- !u!114 &1500378042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,6 +2718,7 @@ MonoBehaviour:
   Cvas: {fileID: 494850156}
   CanvasPoint: {fileID: 1031553406}
   PlayerPoint: {fileID: 320305836}
+  IntroductionAudio: {fileID: 8300000, guid: 183d4def41e056a4aa3adaae4e612c51, type: 3}
 --- !u!114 &1848590413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2826,9 +2871,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The centre unit is where all the printing process goes on. You will be
-    provided with metal sheets which you have to place in the printer. \nThere are
-    buttons avialable on side of frame to open and close it."
+  m_Text: "The center unit is where all the printing process goes on. You will be
+    provided with metal sheets which you have to place in the printer. \r\nThere are
+    buttons available on side of frame to open and close it."
 --- !u!222 &1860476438
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3086,6 +3131,7 @@ GameObject:
   - component: {fileID: 2107429415}
   - component: {fileID: 2107429414}
   - component: {fileID: 2107429413}
+  - component: {fileID: 2107429419}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -3225,3 +3271,98 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!82 &2107429419
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107429411}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
