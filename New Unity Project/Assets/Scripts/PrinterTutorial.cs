@@ -7,6 +7,8 @@ public class PrinterTutorial : MonoBehaviour {
     GameObject[] CurrentTab, NextTab;
     [SerializeField]
     GameObject Cvas, CanvasPoint, PlayerPoint;
+
+    public AudioClip IntroductionAudio;
     
     public void ChangeTab() {
         for (int i = 0; i < NextTab.Length; ++i)
@@ -18,8 +20,14 @@ public class PrinterTutorial : MonoBehaviour {
         Cvas.transform.rotation = CanvasPoint.transform.rotation;
 
         GameObject plyr = GameObject.FindGameObjectWithTag("Player");
+
+        plyr.GetComponentInChildren<AudioSource>().Stop();
+
         plyr.transform.position = PlayerPoint.transform.position;
         plyr.transform.rotation = PlayerPoint.transform.rotation;
+        
+        AudioClip ad = NextTab[0].GetComponentInChildren<PrinterTutorial>().IntroductionAudio;
+        plyr.GetComponentInChildren<AudioSource>().PlayOneShot(ad);
 
         for (int i = 0; i < CurrentTab.Length; ++i)
         {

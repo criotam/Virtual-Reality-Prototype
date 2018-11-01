@@ -545,6 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!1 &206073193
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +977,7 @@ Prefab:
     - target: {fileID: 224332395846694308, guid: 3b4d2c9cd17983e46ab70d2f668fc697,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000003236159
+      value: -0.00008059794
       objectReference: {fileID: 0}
     - target: {fileID: 224861745259984698, guid: 3b4d2c9cd17983e46ab70d2f668fc697,
         type: 2}
@@ -1298,6 +1299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!114 &341286882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,9 +1434,84 @@ Prefab:
       propertyPath: Image
       value: 
       objectReference: {fileID: 1977654532}
+    - target: {fileID: 114054948850929206, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+        type: 2}
+      propertyPath: WelcomeAudio
+      value: 
+      objectReference: {fileID: 1486906290}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad8ac5f1faa047143ae3cdaac56afec6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &380119617 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1800612125087430, guid: ad8ac5f1faa047143ae3cdaac56afec6,
+    type: 2}
+  m_PrefabInternal: {fileID: 380119616}
+--- !u!114 &380119618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380119617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b20773c392c5e4dad5d6d34255cd21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips: []
+  buttonClickSound: {fileID: 8300000, guid: 461c88666275e904f959f13d43f5d559, type: 3}
+--- !u!114 &380119619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380119617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0157c63fb794df89c6735fc602eca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPointerClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 380119618}
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPointerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnScroll:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GvrAllEventsTrigger+TriggerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &386940051
 Prefab:
   m_ObjectHideFlags: 0
@@ -3672,6 +3749,7 @@ GameObject:
   - component: {fileID: 413871720}
   - component: {fileID: 413871719}
   - component: {fileID: 413871718}
+  - component: {fileID: 413871724}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -3811,6 +3889,101 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!82 &413871724
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413871716}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &439068128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,6 +4312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!1 &589928531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,6 +4776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!114 &677217913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4812,6 +4987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!114 &686935795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5268,6 +5444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!1001 &971731349
 Prefab:
   m_ObjectHideFlags: 0
@@ -5514,7 +5691,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "The metal plate desk is were from you will get all new plates that you
-    have to place in the printer. \nYou will aso be able to put there replaced old
+    have to place in the printer. \nYou will also be able to put there replaced old
     metal plates..\nIt is situated alongside quest box."
 --- !u!222 &1007381218
 CanvasRenderer:
@@ -5575,6 +5752,7 @@ MonoBehaviour:
   - {fileID: 1141708918}
   NextTab:
   - {fileID: 1899170842}
+  IntroductionAudio: {fileID: 8300000, guid: 62254f7de452ee14db1327b3dc3d8b53, type: 3}
 --- !u!114 &1050531720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5796,6 +5974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 8300000, guid: 5f8628f85e70a524bb9c573765aa5fa7, type: 3}
 --- !u!1 &1093985122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6039,6 +6218,7 @@ MonoBehaviour:
   - {fileID: 214138221}
   NextTab:
   - {fileID: 769194465}
+  IntroductionAudio: {fileID: 8300000, guid: 393e6fe17d67e9a4b95821fb09a0098b, type: 3}
 --- !u!114 &1147457191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6502,6 +6682,7 @@ MonoBehaviour:
   NextTab:
   - {fileID: 2108538239}
   - {fileID: 642160502}
+  IntroductionAudio: {fileID: 8300000, guid: bb657f7b134d5454194b52411dfe7cf1, type: 3}
 --- !u!114 &1343069782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6947,6 +7128,7 @@ MonoBehaviour:
   - {fileID: 1204554868}
   NextTab:
   - {fileID: 214138221}
+  IntroductionAudio: {fileID: 8300000, guid: 0a4ec2e0c1db38c48a94721ba3a8d0fb, type: 3}
 --- !u!1 &1601785783
 GameObject:
   m_ObjectHideFlags: 0
@@ -7231,6 +7413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentTab: []
   NextTab: []
+  IntroductionAudio: {fileID: 0}
 --- !u!1 &1732610369
 GameObject:
   m_ObjectHideFlags: 0
@@ -7446,11 +7629,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Every Interactable objects changes color when you look at them.
-
-    The image on the right has some interactable objects. Click it.
-
-'
+  m_Text: "Every Intractable objects changes color when you look at them.\r\nThe image
+    on the right has some intractable objects. Click it."
 --- !u!222 &1778138256
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7528,7 +7708,7 @@ MonoBehaviour:
 
     The desk will show the current task that you have to complete.
 
-    The quest desk is situated dehid you in corner. Take a look.'
+    The quest desk is situated behind you in corner. Take a look.'
 --- !u!222 &1810367077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7809,6 +7989,7 @@ MonoBehaviour:
   - {fileID: 1899170842}
   NextTab:
   - {fileID: 1093985122}
+  IntroductionAudio: {fileID: 8300000, guid: 08315760ee3ef5349bb06369e04440b3, type: 3}
 --- !u!114 &1908616597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8450,6 +8631,7 @@ MonoBehaviour:
   - {fileID: 2108538239}
   NextTab:
   - {fileID: 1141708918}
+  IntroductionAudio: {fileID: 8300000, guid: 750cc9b9593121640a13b0aff20e2880, type: 3}
 --- !u!1 &2130334218
 GameObject:
   m_ObjectHideFlags: 0
